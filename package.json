@@ -1,0 +1,11 @@
+{
+  "name": "friday-dispatch",
+  "version": "1.0.0",
+  "description": "Automated weekly Gmail reporter via GitHub Actions",
+  "scripts": {
+    "send": "node scripts/send-report.js"
+  },
+  "dependencies": {
+    "googleapis": "^144.0.0"
+  }
+}
