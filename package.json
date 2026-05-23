@@ -6,6 +6,6 @@
     "send": "node scripts/send-report.js"
   },
   "dependencies": {
-    "googleapis": "^144.0.0"
-  }
+  "exceljs": "^4.4.0",
+  "googleapis": "^144.0.0"
 }
