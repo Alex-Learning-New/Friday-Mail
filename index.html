@@ -243,7 +243,7 @@
     </div>
   </div>
   <div style="display:flex;gap:8px;flex-wrap:wrap;">
-    <div class="pill on"><div class="dot"></div><span>Cron: 45 10 * * 6 (UTC)</span></div>
+    <div class="pill on"><div class="dot"></div><span>Cron: 20 11 * * 6 (UTC)</span></div>
     <div class="pill on"><div class="dot"></div><span id="nextLabel">calculating…</span></div>
   </div>
 </div>
@@ -298,9 +298,9 @@
     <div class="card">
       <div class="card-head"><div class="card-title">⏱ Schedule</div></div>
       <div class="card-body">
-        <div class="ir"><span class="ik">Cron</span><span class="iv a">45 10 * * 6</span></div>
-        <div class="ir"><span class="ik">When</span><span class="iv">Every Saturday 10:45 UTC</span></div>
-        <div class="ir"><span class="ik">IST</span><span class="iv">Sat 04:15 PM</span></div>
+        <div class="ir"><span class="ik">Cron</span><span class="iv a">20 11 * * 6</span></div>
+        <div class="ir"><span class="ik">When</span><span class="iv">Every Saturday 11:20 UTC</span></div>
+        <div class="ir"><span class="ik">IST</span><span class="iv">Sat 04:50 PM</span></div>
         <div class="ir"><span class="ik">Runner</span><span class="iv g">GitHub Actions ✓</span></div>
         <div class="ir"><span class="ik">Tab needed?</span><span class="iv g">No ✓</span></div>
       </div>
@@ -516,7 +516,7 @@ function ghFetch(path, token, method='GET', body=null) {
 // ── countdown ─────────────────────────────────────────────────────
 function nextFriday() {
   const n = new Date();
-  const u = new Date(Date.UTC(n.getUTCFullYear(),n.getUTCMonth(),n.getUTCDate(),10,45,0,0));
+  const u = new Date(Date.UTC(n.getUTCFullYear(),n.getUTCMonth(),n.getUTCDate(),11,20,0,0));
   const d = (6 - u.getUTCDay() + 7) % 7 || 7;
   u.setUTCDate(u.getUTCDate() + d);
   return u;
@@ -528,7 +528,7 @@ function tickCD() {
   document.getElementById('cdVal').textContent =
     `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
   document.getElementById('cdSub').textContent =
-    nf.toLocaleDateString(undefined,{weekday:'short',month:'short',day:'numeric'}) + ' · 10:45 UTC';
+    nf.toLocaleDateString(undefined,{weekday:'short',month:'short',day:'numeric'}) + ' · 11:20 UTC';
   document.getElementById('nextLabel').textContent =
     'Next: ' + nf.toLocaleDateString(undefined,{weekday:'short',month:'short',day:'numeric'});
 }
