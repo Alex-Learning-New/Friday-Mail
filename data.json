@@ -1,10 +1,46 @@
 {
-  "headers": ["Product", "Units Sold", "Revenue (₹)", "Growth", "Status"],
+  "headers": [
+    "Product",
+    "Units Sold",
+    "Revenue (₹)",
+    "Growth",
+    "Status"
+  ],
   "rows": [
-    ["Widget Alpha",   "1,240", "₹62,000",    "+12.4%", "Active"],
-    ["Widget Beta",    "876",   "₹43,800",    "+7.1%",  "Active"],
-    ["Widget Gamma",   "2,100", "₹1,05,000",  "−3.2%",  "Paused"],
-    ["Widget Delta",   "450",   "₹22,500",    "+21.0%", "Active"],
-    ["Widget Epsilon", "310",   "₹15,500",    "0.0%",   "Review"]
+    [
+      "Widget Alpha",
+      "1,240",
+      "₹62,000",
+      "+12.4%",
+      "Active"
+    ],
+    [
+      "Widget Beta",
+      "876",
+      "₹43,800",
+      "+7.1%",
+      "Active"
+    ],
+    [
+      "Widget Gamma",
+      "2,100",
+      "₹1,05,000",
+      "−3.2%",
+      "Paused"
+    ],
+    [
+      "Widget Delta",
+      "450",
+      "₹22,500",
+      "+21.0%",
+      "Active"
+    ],
+    [
+      "Widget Epsilon",
+      "310",
+      "₹15,500",
+      "0.0%",
+      "Review"
+    ]
   ]
 }
